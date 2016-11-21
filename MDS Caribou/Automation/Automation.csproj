@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7D2CDD6-3832-40AB-A73B-A2824000815F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Automation</RootNamespace>
+    <AssemblyName>Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, &#xD;&#xA;&#xD;&#xA;processorArchitecture=MSIL">
+      <HintPath>..\Framework\Framework\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RelevantCodes.ExtentReports, Version=1.4.9.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="WebDriver, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Framework\Framework\packages\Selenium.WebDriver.2.53.1\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.53.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\Framework\Framework\packages\Selenium.Support.2.53.1\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="POM\AdminPage.cs" />
+    <Compile Include="POM\AssessmentPage.cs" />
+    <Compile Include="POM\AssessmentsPage.cs" />
+    <Compile Include="POM\BatchesPage.cs" />
+    <Compile Include="POM\BatchesTransmitPage.cs" />
+    <Compile Include="POM\CMS802Page.cs" />
+    <Compile Include="POM\CreateNewMDSPage.cs" />
+    <Compile Include="POM\DashboardPage.cs" />
+    <Compile Include="POM\DropdownMenu.cs" />
+    <Compile Include="POM\FacilityDisciplinePage.cs" />
+    <Compile Include="POM\FacilityRolePage.cs" />
+    <Compile Include="POM\FacilitySettingsPage.cs" />
+    <Compile Include="POM\GenerateResidentsReportPage.cs" />
+    <Compile Include="POM\ManualsAndFormsPage.cs" />
+    <Compile Include="POM\MDSAdhocPage.cs" />
+    <Compile Include="POM\MDSMasterResidentListPage.cs" />
+    <Compile Include="POM\NotificationsPage.cs" />
+    <Compile Include="POM\NursingIndexAndRUG-IVReimbursementReportPage.cs" />
+    <Compile Include="POM\QMFacilityCharacteristicsPage.cs" />
+    <Compile Include="POM\QualityMeasuresLongStayDetailsPage.cs" />
+    <Compile Include="POM\QualityMeasuresShortStayDetailsPage.cs" />
+    <Compile Include="POM\QualityMeasuresSummaryPage.cs" />
+    <Compile Include="POM\ReimbersementPage.cs" />
+    <Compile Include="POM\ResidentsHistoryPage.cs" />
+    <Compile Include="POM\RugRatesPage.cs" />
+    <Compile Include="POM\SchedulePage.cs" />
+    <Compile Include="POM\SearchResidentsPage.cs" />
+    <Compile Include="POM\SelectReportFromListPage.cs" />
+    <Compile Include="POM\SidebarMenu.cs" />
+    <Compile Include="POM\UserMenu.cs" />
+    <Compile Include="POM\Footer.cs" />
+    <Compile Include="POM\LandingPage.cs" />
+    <Compile Include="POM\LoginPage.cs" />
+    <Compile Include="POM\UserAccountPage.cs" />
+    <Compile Include="POM\UserPopupWindow.cs" />
+    <Compile Include="POM\UsersRolesPage.cs" />
+    <Compile Include="POM\WorkInProgressPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regression\AA - Create New Facility.cs" />
+    <Compile Include="Regression\AB - New User Access for Facility Administrator - Assign to facility.cs" />
+    <Compile Include="Regression\AC - Facility Administrator - Remove from Facility.cs" />
+    <Compile Include="Regression\AD - Import Historical Data.cs" />
+    <Compile Include="Regression\AE - Import RUG Rates.cs" />
+    <Compile Include="Regression\AF - View Security Events.cs" />
+    <Compile Include="Regression\AG - Change Password.cs" />
+    <Compile Include="Regression\AH - Accounts Are Locked After Failed Logins.cs" />
+    <Compile Include="Regression\AI - Users  Roles - Add Roles Edit Role Delete Role.cs" />
+    <Compile Include="Regression\AJ - Users Roles - Assign Permissions  Sections to Role.cs" />
+    <Compile Include="Regression\AK - Users  Roles - Add Discipline, Edit Discipline, Delete Discpline.cs" />
+    <Compile Include="Regression\AL - Request Access.cs" />
+    <Compile Include="Regression\AM - Approve New User Access - Assign Role Discipline.cs" />
+    <Compile Include="Regression\AN - Sign in With User Permissions - Verify Tile Permissions Received.cs" />
+    <Compile Include="Regression\AO - Expired Password.cs" />
+    <Compile Include="Regression\AP - Change Password.cs" />
+    <Compile Include="Regression\C - WIP-Sort OBRA PPS buttons.cs" />
+    <Compile Include="Regression\CA - WIP - Due in xx days slider bar.cs" />
+    <Compile Include="Regression\CB - WIP - Search Residents.cs" />
+    <Compile Include="Regression\CC - WIP - Filter By Neighborhood.cs" />
+    <Compile Include="Regression\CD - WIP - Sort WIP Page by ARD Date.cs" />
+    <Compile Include="Regression\CE - WIP - Verify Resident Information Displays.cs" />
+    <Compile Include="Regression\CF - WIP - Verify Resident Admission Date displays correctly.cs" />
+    <Compile Include="Regression\CG - WIP - Verify Admit Discharge Date is correct.cs" />
+    <Compile Include="Regression\CH - WIP - Verify Assessment Type is correct.cs" />
+    <Compile Include="Regression\CI - WIP - Verify ARD date is correct.cs" />
+    <Compile Include="Regression\CJ - WIP - Verify Complete by Date Column.cs" />
+    <Compile Include="Regression\CK - WIP - Verify CAA complete by date.cs" />
+    <Compile Include="Regression\CL - WIP - Care Plan Review Date column.cs" />
+    <Compile Include="Regression\CN - WIP - Verify Number of assessments %28bottom right%29.cs" />
+    <Compile Include="Regression\CO - WIP - Verify pagination works.cs" />
+    <Compile Include="Regression\CP - WIP - Open WIP button Functionality.cs" />
+    <Compile Include="Regression\CQ- WIP - View Resident History by resident name %28RN%29 circle button.cs" />
+    <Compile Include="Regression\CR - Resident History Tile - Search Residents text box %28last name first name with comma without comma.cs" />
+    <Compile Include="Regression\CS - Resident History Tile - Filter By Neighborhood.cs" />
+    <Compile Include="Regression\CT - Resident History Tile - Resident History Tile information displays on resident tile Room Bed Neighborhood SSN Full name.cs" />
+    <Compile Include="Regression\CU - Resident History Tile - Selecting resident tile displays resident history information.cs" />
+    <Compile Include="Regression\CV - Resident History Tile - Resident name and information is displayed in top left of resident history.cs" />
+    <Compile Include="Regression\CW - Resident History Tile - HIDE-SHOW Archive button functionality.cs" />
+    <Compile Include="Regression\CZ - Resident History Tile - Action Dropdown Menu - Edit selection Functionality.cs" />
+    <Compile Include="Regression\D - Resident History Tile - Action Dropdown menu - View selection Functionality.cs" />
+    <Compile Include="Regression\DA - Resident History Tile - Action Dropdown menu - Print Preview selection Functionality.cs" />
+    <Compile Include="Regression\DB - Resident History - Tile -Action Dropdown menu - Change Item Set selection Functionality.cs" />
+    <Compile Include="Regression\DC - Resident History - Schedule Tile - Schedule  Accuracy - Quarterly and Annual slider bar settings.cs" />
+    <Compile Include="Regression\DD - Resident History - Action Dropdown menu - Audit Trail selection Functionality.cs" />
+    <Compile Include="Regression\DE - Resident History - Action Dropdown menu - Inactivation selection Functionality.cs" />
+    <Compile Include="Regression\DF - Resident History - Action Dropdown menuAction Dropdown menu - Modification selection Functionality.cs" />
+    <Compile Include="Regression\DG - Resident History - Residents  History Grid - Assessment type A0050 ARD Complete Date Rug Score Status Submission Status Batch Number Date Refresh button are displayed.cs" />
+    <Compile Include="Regression\DI - Resident History - Assessments display on Residents History Grid.cs" />
+    <Compile Include="Regression\EA - Quality Measures- Facility Characteristics Report.cs" />
+    <Compile Include="Regression\EB - Quality Measures - Summary Report.cs" />
+    <Compile Include="Regression\EC - Quality Measures - Detail - Long Stay.cs" />
+    <Compile Include="Regression\ED - Quality Measures - Detail - Short Stay.cs" />
+    <Compile Include="Regression\EE - Billing Report - Nursing Index and RUG-IV Reimbursement Report - STILL IN PROGRESS.cs" />
+    <Compile Include="Regression\EF - Master Resident List.cs" />
+    <Compile Include="Regression\EG - Manuals and Forms.cs" />
+    <Compile Include="Regression\EI - Interward Transfer.cs" />
+    <Compile Include="Regression\EJ - Switch Bed.cs" />
+    <Compile Include="Regression\EK - Sync.cs" />
+    <Compile Include="Regression\EL - Episode File testing - All 3 scenarios.cs" />
+    <Compile Include="Regression\EM- Facility Settings.cs" />
+    <Compile Include="Regression\EN - Facility Settings - CAA Setting.cs" />
+    <Compile Include="Regression\EO - Create Entry Tracking Validate NT item set displays..cs" />
+    <Compile Include="Regression\EP - Create Admission Validate NC item set displays.cs" />
+    <Compile Include="Regression\EQ - Create Quarterly Validate NQ item set displays..cs" />
+    <Compile Include="Regression\ER - Create Annual Validate NC item set displays..cs" />
+    <Compile Include="Regression\ES - Create PPS 5 day Validate NP item set displays.cs" />
+    <Compile Include="Regression\ET - Create Discharge Validate ND item set displays.cs" />
+    <Compile Include="Regression\EU - Complete Comprehensive and validate skips dashes validations saves.cs" />
+    <Compile Include="Regression\EV - Printing Comprehensive Assessment.cs" />
+    <Compile Include="Regression\EW - CAA triggers.cs" />
+    <Compile Include="Regression\EX - Verify V0200 A CAAs and Care Planning button functionality - Correct CAAs display.cs" />
+    <Compile Include="Regression\EY - CAA TIU.cs" />
+    <Compile Include="Regression\EZ - CAA Print.cs" />
+    <Compile Include="Regression\FB - RUG Scores.cs" />
+    <Compile Include="Regression\FC - Create Inactivation and verify accuracy.cs" />
+    <Compile Include="Regression\FD - Create modification and verify ac.cs" />
+    <Compile Include="Regression\OLD-Placeholder - Display last 2 OBRA assessment answers on each section of the current assessment user is working on.cs" />
+    <Compile Include="Regression\Quality Measures - All Reports  - Print a report - Export to Microsoft Word.cs" />
+    <Compile Include="Regression\Reports - ADT Summary Report - Export to Excel button functionality.cs" />
+    <Compile Include="Regression\Reports - ADT Summary Report.cs" />
+    <Compile Include="Regression\Reports - ADT Summary.cs" />
+    <Compile Include="Regression\Reports - Dashboard functionality - Assessments By Month Line Graph.cs" />
+    <Compile Include="Regression\Reports - Dashboard functionality - Progress this month pie chart.cs" />
+    <Compile Include="Regression\Resident History Tile - Pagination functionality- Previous - Next - pages 1-2-3 etc.cs" />
+    <Compile Include="UI Test\AdminPageTest.cs" />
+    <Compile Include="UI Test\AssessmentsPageTest.cs" />
+    <Compile Include="UI Test\BatchesPageTest.cs" />
+    <Compile Include="UI Test\CMS802RosterSampleMatrixPageTest.cs" />
+    <Compile Include="UI Test\DashboardPageTest.cs" />
+    <Compile Include="UI Test\FacilityDisciplinePageTest.cs" />
+    <Compile Include="UI Test\FacilityRolePageTest.cs" />
+    <Compile Include="UI Test\FacilitySettingsPageTest.cs" />
+    <Compile Include="UI Test\GenerateAdhocReportPageTest.cs" />
+    <Compile Include="UI Test\GenerateResidentsReportPageTest.cs" />
+    <Compile Include="UI Test\LandingPageTest.cs" />
+    <Compile Include="UI Test\LoginPageTest.cs" />
+    <Compile Include="UI Test\ManualsAndFormsPageTest.cs" />
+    <Compile Include="UI Test\MDSAdhocReportsPageTest.cs" />
+    <Compile Include="UI Test\MDSMasterResidentListPageTest.cs" />
+    <Compile Include="UI Test\NeighborhoodsPageTest.cs" />
+    <Compile Include="UI Test\NotificationsPageTest.cs" />
+    <Compile Include="UI Test\NursingIndexAndRUGIVReimbursementReportPageTest.cs" />
+    <Compile Include="UI Test\QMFacilityCharacteristicsPageTest.cs" />
+    <Compile Include="UI Test\QualityMeasuresLongStayDetailsPageTest.cs" />
+    <Compile Include="UI Test\QualityMeasuresShortStayDetailsPageTest.cs" />
+    <Compile Include="UI Test\QualityMeasuresSummaryPageTest.cs" />
+    <Compile Include="UI Test\RUGIV66GrouperPageTest.cs" />
+    <Compile Include="UI Test\SearchResidentsPageTest.cs" />
+    <Compile Include="UI Test\SelectReportFromListPageTest.cs" />
+    <Compile Include="UI Test\UserMenuTest.cs" />
+    <Compile Include="UI Test\UsersRolesPageTest.cs" />
+    <Compile Include="UI Test\WorkInProgressPageTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Framework\Framework\Framework.csproj">
+      <Project>{96f27c58-f61b-4391-bd85-438ded8498c7}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

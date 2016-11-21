@@ -1,0 +1,29 @@
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\Automation.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\Automation.pdb
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\Framework.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\nunit.framework.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\WebDriver.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\WebDriver.Support.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\RelevantCodes.ExtentReports.dll
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\Framework.pdb
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\nunit.framework.xml
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\WebDriver.xml
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\WebDriver.Support.xml
+C:\Users\daliyev\Desktop\Projects\Automation\obj\Debug\Automation.csprojResolveAssemblyReference.cache
+C:\Users\daliyev\Desktop\Projects\Automation\obj\Debug\Automation.dll
+C:\Users\daliyev\Desktop\Projects\Automation\obj\Debug\Automation.pdb
+C:\Users\daliyev\Desktop\Projects\Automation\bin\Debug\Automation.dll.config
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\Automation.dll.config
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\Automation.dll
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\Automation.pdb
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\Framework.dll
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\nunit.framework.dll
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\WebDriver.dll
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\WebDriver.Support.dll
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\Framework.pdb
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\nunit.framework.xml
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\WebDriver.xml
+C:\Automation\Projects\MDS Caribou\Automation\bin\Debug\WebDriver.Support.xml
+C:\Automation\Projects\MDS Caribou\Automation\obj\Debug\Automation.csprojResolveAssemblyReference.cache
+C:\Automation\Projects\MDS Caribou\Automation\obj\Debug\Automation.dll
+C:\Automation\Projects\MDS Caribou\Automation\obj\Debug\Automation.pdb
